@@ -654,5 +654,4 @@ class aibdController extends aibdDAO
         echo "</select>";
     }
 
-    
 }

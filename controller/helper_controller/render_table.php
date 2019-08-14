@@ -220,6 +220,9 @@ class RenderTable
         include "../../conexion/datos.php";
         //------------------------------------------------------------------------------------------------
         switch ($type) {
+            case 'habilitar':
+                echo '<button id="btn_habilitar" name="habilita_' . $name . '" title="Habilitar" type="button" class="btn btn-success" data-id-' . $name . ' = "' . $id . '" ' . $permiso . '><span class="glyphicon glyphicon-ok"></span></button>&nbsp';
+                break;
             case 'editar':
                 echo '<button id="btn_editar" name="edita_' . $name . '" title="Editar" type="button" class="btn btn-warning" data-toggle="modal" data-target="#frm_modal_' . $name . '" data-id-' . $name . ' = "' . $id . '" ' . $permiso . '><span class="glyphicon glyphicon-pencil"></span></button>&nbsp';
                 break;

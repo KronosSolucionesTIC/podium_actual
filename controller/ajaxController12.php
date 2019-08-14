@@ -288,6 +288,21 @@ switch ($accion) {
             $r["mensaje"] = "No se eliminó.";
         }
         break;
+    case 'habilita_afiliado':
+        $generico   = new Generico_DAO();
+        $crea_sql   = new crea_sql();
+        $q_elimina  = $crea_sql->crea_habilitar($_GET);
+        $r["query"] = $q_elimina;
+        $resultado  = $generico->EjecutaEliminar($q_elimina);
+        /**/
+        if ($resultado) {
+            $r["estado"]  = "ok";
+            $r["mensaje"] = $resultado;
+        } else {
+            $r["estado"]  = "Error";
+            $r["mensaje"] = "No se eliminó.";
+        }
+        break;
         //----------------------------------------------------------------------------------------------------
 }
 //--------------------------------------------------------------------------------------------------------

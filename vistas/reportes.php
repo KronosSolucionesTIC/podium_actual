@@ -1,14 +1,19 @@
 <?php
 
 /**/
+//--------------------------------------------------------------------
+include '../controller/indexController.php';
+$setCookie = new indexController();
+$setCookie->setConstantProyectoM($_GET["id_proyectoM"], $_GET["nom_proyectoM"]);
+//--------------------------------------------------------------------
 include '../controller/muestra_pagina.php';
 
-$muestra_estudiantes = new mostrar();
+$muestra_detalles_proyectoM = new mostrar();
 
 //---------------------------------------------------------
 $pagina    = 'cont_reportes.php';
-$scripts   = array('cont_reportes.js');
-$id_modulo = 40;
+$scripts   = array('helper_proyectoM.js', 'cont_reportes.js');
+$id_modulo = 2;
 //---------------------------------------------------------
 
-$muestra_estudiantes->mostrar_pagina_scripts($pagina, $scripts, $id_modulo);
+$muestra_detalles_proyectoM->mostrar_pagina_scripts($pagina, $scripts, $id_modulo);

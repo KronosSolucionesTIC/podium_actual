@@ -10,7 +10,7 @@ $proyectoMGen   = $principalInst->getProyectosMarcoId($pkID_proyectoM);
 //--------------------------------------------------------------------
 ?>
 
-<div id="page-wrapper" style="margin: 0px;">
+<div id="page-principal" style="margin: 0px;">
 
              <!-- Contenido del Index -->
              <div class="row">
@@ -25,16 +25,14 @@ $proyectoMGen   = $principalInst->getProyectosMarcoId($pkID_proyectoM);
                     <div class="panel panel-default">
 
                         <div class="titulohead">
-                            <div class="text-center titulo-menu"><h3>Configuración - <?php echo $proyectoMGen[0]["nombre"] ?></h3></div>
+                            <div class="text-center titulo-menu"><h3>Configuración</h3></div>
                         </div>
                         <div class="panel-body">
 
                             <div class="col-lg-12">
                                   <ol class="breadcrumb migadepan">
-                                    <li><a href="proyecto_marco.php" class="migadepan">Inicio</a></li>
-                                    <li><a href="descripcion.php?id_proyectoM=<?php echo $pkID_proyectoM; ?>" class="migadepan">Descripción</a></li>
-                                    <li><a href="principal.php?id_proyectoM=<?php echo $pkID_proyectoM; ?>" class="migadepan">Menú principal</a></li>
-                                    <li class="active migadepan">Configuración- <?php echo $proyectoMGen[0]["nombre"] ?> </li>
+                                    <li><a href="principal.php" class="migadepan">Inicio</a></li>
+                                    <li class="active migadepan">Configuración</li>
                                   </ol>
                               </div>
 
@@ -51,13 +49,12 @@ $proyectoMGen   = $principalInst->getProyectosMarcoId($pkID_proyectoM);
 
                                         <div class="">
                                             <div class="">
-                                                <div class="col-md-1 zoom"></div>
-                                                <div class="col-md-2 zoom"><a class="" href="institucion.php?id_proyectoM=<?php echo $pkID_proyectoM; ?>"><img class="zoom" src="../img/botones/instituciones.png"></a></div>
-                                                <div class="col-md-2 zoom"><a class="" href="docentes.php?id_proyectoM=<?php echo $pkID_proyectoM; ?>"><img  class="zoom" src="../img/botones/docentes.png"></a></div>
-                                                <div class="col-md-2 zoom"><a class="" href="estudiantes.php?id_proyectoM=<?php echo $pkID_proyectoM; ?>"><img  class="zoom" src="../img/botones/estudiantes.png"></a></div>
-                                                <div class="col-md-2 zoom"><a class="" href="funcionario.php?id_proyectoM=<?php echo $pkID_proyectoM; ?>"><img class="zoom" src="../img/botones/funcionarios.png"></a></div>
-                                                <div class="col-md-2 zoom"><a class="" href="participantes.php?id_proyectoM=<?php echo $pkID_proyectoM; ?>"><img class="zoom" src="../img/botones/participantes.png"></a></div>
-                                                <div class="col-md-1 zoom"></div>
+                                                <div class="col-md-2 zoom"><a class="" href="eps.php"><img class="zoom" src="../img/botones/instituciones.png"></a></div>
+                                                <div class="col-md-2 zoom"><a class="" href="categoria.php"><img  class="zoom" src="../img/botones/docentes.png"></a></div>
+                                                <div class="col-md-2 zoom"><a class="" href="costos.php"><img  class="zoom" src="../img/botones/estudiantes.png"></a></div>
+                                                <div class="col-md-2 zoom"><a class="" href="tipo_ingresos.php"><img class="zoom" src="../img/botones/funcionarios.png"></a></div>
+                                                <div class="col-md-2 zoom"><a class="" href="tipo_gastos.php"><img class="zoom" src="../img/botones/participantes.png"></a></div>
+                                                <div class="col-md-2 zoom"><a class="" href="proveedor.php"><img class="zoom" src="../img/botones/participantes.png"></a></div>
                                             </div>
                                         </div>
 

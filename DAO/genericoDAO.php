@@ -67,7 +67,7 @@ trait GenericoDAO
         } else {
             $retorno = $result;
 
-                return $retorno;
+            return $retorno;
         }
 
     }
